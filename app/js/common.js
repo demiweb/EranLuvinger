@@ -29,6 +29,7 @@ $(window).scroll(function (e) {
     $el.toggleClass('header-fixed', $(this).scrollTop() > 52);
 });
 
+
 //header scroll
 
 //go next click
