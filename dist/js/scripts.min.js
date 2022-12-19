@@ -29,6 +29,16 @@ $(window).scroll(function (e) {
     $el.toggleClass('header-fixed', $(this).scrollTop() > 52);
 });
 
+function headerStart() {
+    let headr = document.querySelector('.header');
+    let hei = headr.offsetHeight;
+    console.log(hei);
+    if (window.innerWidth < 768) {
+        let hm = document.querySelector('.header-menu');
+        hm.style.height = `calc((100vh - ${hei}px) + 4.1767vw)`;
+    }
+}
+headerStart();
 
 //header scroll
 
@@ -76,7 +86,7 @@ allLozadImg();
 // var backdrop = document.querySelector('.backdrop');
 
 let burger = [...document.querySelectorAll('.burger')];
-let centerMenu = [...document.querySelectorAll('.header-center')][0];
+let centerMenu = [...document.querySelectorAll('.header-menu')][0];
 
 function burgerControl() {
     if (burger.length) {

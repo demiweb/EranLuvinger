@@ -622,8 +622,242 @@ body {
   }
 }
 
+.header-socials {
+  display: none;
+}
+
+.cases {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.big-case {
+  width: 100%;
+  position: relative;
+  min-height: 100vh;
+  height: auto;
+  overflow: hidden;
+
+  .container {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    max-width: calc(100% - 10.4167vw);
+  }
+
+  .bg {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+.big-case-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  background: #0C1115;
+  position: relative;
+  padding: 0.2083vw 1.5104vw 0.9896vw;
+
+  span {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3.3333vw;
+    line-height: 1.7;
+    color: #FFFFFF;
+  }
+
+  p {
+    font-style: normal;
+    font-weight: 200;
+    font-size: 1.5625vw;
+    line-height: 1.33;
+    color: #BDBDBD;
+  }
+
+  .btn--pink {
+    position: absolute;
+    top: calc(100% + 1.7708vw);
+    left: 0;
+  }
+}
+
+.btn--pink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.5625vw;
+  line-height: 120%;
+  text-align: center;
+  color: #FFFFFF;
+  padding: 0.7813vw 1.5104vw;
+  background: $pink;
+  border-radius: 0.4167vw;
+  border: 2px solid $pink;
+  transition: background-color 0.4s ease, color 0.4s ease;
+
+  &:hover {
+    background: #fff;
+    color: $pink;
+    transition: background-color 0.4s ease, color 0.4s ease;
+  }
+}
+
 
 @media screen and (max-width: 767px) {
+
+  .header-socials {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    span {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 5.0000vw;
+      line-height: 10.2778vw;
+      color: #E72A84;
+      display: inline-block;
+      margin-bottom: 3.3333vw;
+    }
+
+    ul {
+      width: 100%;
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+      flex-direction: column;
+
+      li {
+        width: 100%;
+
+        a {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          padding-left: 11.1111vw;
+
+          font-style: normal;
+          font-weight: 400;
+          font-size: 5.0000vw;
+          line-height: 13.3333vw;
+          color: #FFFFFF;
+          position: relative;
+
+          &::before {
+            width: 7.7778vw;
+            height: 3.8889vw;
+            display: inline-block;
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translate(0, -50%);
+            background: url("../img/arrow-pink-r2.svg") no-repeat center / 100%;
+          }
+        }
+      }
+    }
+  }
+  .header-socials {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-top: 29.1667vw;
+    padding-left: 24.7222vw;
+  }
+  .header-menu {
+    //width: 100%;
+    transform: translate(0, -170%);
+    transition: transform 0.6s ease;
+    pointer-events: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: absolute;
+    top: calc(100% - 4.1767vw);
+    overflow-y: auto;
+    left: 4.1667vw;
+    right: 4.1667vw;
+    background-color: $dark;
+    padding: 0 0 16.1111vw;
+
+    &.out {
+      transform: translate(0, 0);
+    }
+  }
+
+  .menu {
+    width: 100%;
+
+    ul {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+
+      li {
+        margin-bottom: 1.6667vw;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        &::before {
+          height: 3.8889vw;
+          width: 15.0000vw;
+          position: absolute;
+          left: 0;
+          top: 50%;
+          right: auto;
+          bottom: auto;
+          transform-origin: 0 50%;
+          transform: translate(0, -50%);
+          background: url("../img/arrow-pink-r.svg") no-repeat center / 100%;
+        }
+
+        a {
+          width: 100%;
+          display: flex;
+          padding: 3.3333vw 2.7778vw 3.3333vw 24.7222vw;
+          font-size: 5.0000vw;
+          line-height: 10.2778vw;
+        }
+      }
+    }
+
+  }
   .footer-bot {
     width: 100%;
     display: flex;
@@ -654,6 +888,7 @@ body {
       line-height: 12.7778vw;
     }
   }
+
   .footer {
     padding-top: 18.8889vw;
   }
@@ -883,7 +1118,7 @@ body {
     }
   }
   .header-menu {
-    display: none;
+    //display: none;
   }
   body.home .header .logo::before {
     display: none;
