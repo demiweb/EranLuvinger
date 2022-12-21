@@ -121,6 +121,54 @@ function openHeadLinks() {
 openHeadLinks();
 //sliders
 
+let costumers = [...document.querySelectorAll('.our-costumers__list')];
+
+function costumSlider() {
+    if (!costumers.length) {
+
+    } else {
+        if (window.innerWidth < 768) {
+            costumers.forEach((sld) => {
+                let sldCont = sld.querySelector('.swiper-container');
+                let pagin = sld.querySelector('.dots');
+
+                const swiper2 = new Swiper(sldCont, {
+                    // Optional parameters
+                    // effect: "flip",
+                    slidesPerView: 1,
+
+                    loop: false,
+                    grid: {
+                        rows: 5,
+                    },
+
+                    speed: 600,
+                    pagination: {
+                        el: pagin,
+                        type: 'bullets',
+                        clickable: true,
+                        bulletClass: 'single-dot',
+                        bulletActiveClass: 'active',
+                    },
+                    autoplay: false,
+                    // autoplay: {
+                    //     // delay: 6500,
+                    //     disableOnInteraction: true,
+                    // },
+                    spaceBetween: 9,
+
+
+                });
+            })
+        }
+
+    }
+}
+
+costumSlider();
+
+
+
 
 let subSlider = [...document.querySelectorAll('.sub-menu-slider')];
 
@@ -202,42 +250,7 @@ function lineStartSlider() {
 
 lineStartSlider();
 
-let wheelSlider = [...document.querySelectorAll('.wheel-slider-cont')];
 
-function wheelStartSlider() {
-    if (!wheelSlider.length) {
-
-    } else {
-        wheelSlider.forEach((sld) => {
-            let sldCont = sld.querySelector('.wheel-slider');
-            let sldNext = sld.querySelector('.slider-btn--next');
-            let sldPrev = sld.querySelector('.slider-btn--prev');
-
-            const swiper2 = new Swiper(sldCont, {
-                // Optional parameters
-                // effect: "flip",
-                loop: false,
-                slidesPerView: 3,
-                slidesPerGroup: 3,
-                speed: 600,
-                navigation: {
-                    nextEl: sldNext,
-                    prevEl: sldPrev,
-                },
-                autoplay: false,
-                // autoplay: {
-                //     // delay: 6500,
-                //     disableOnInteraction: true,
-                // },
-                spaceBetween: 9,
-
-
-            });
-        })
-    }
-}
-
-wheelStartSlider();
 
 
 //sliders

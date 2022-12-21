@@ -1,59 +1,45 @@
 @font-face {
-  font-family: 'RoadRadio';
-  src: url('../fonts/road/RoadRadio.eot');
-  src: local('RoadRadio'),
-  url('../fonts/road/RoadRadio.eot?#iefix') format('embedded-opentype'),
-  url('../fonts/road/RoadRadio.woff2') format('woff2'),
-  url('../fonts/road/RoadRadio.woff') format('woff'),
-  url('../fonts/road/RoadRadio.ttf') format('truetype');
+  font-family: 'SimplerPro';
+  src: url('../fonts/simpler/SimplerPro-Regular.otf');
+  src: local('SimplerPro'),
+  url('../fonts/simpler/SimplerPro-Regular.otf?#iefix') format('embedded-opentype'),
+  url('../fonts/simpler/SimplerPro-Regular.woff2') format('woff2'),
+  url('../fonts/simpler/SimplerPro-Regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'RoadRadio';
-  src: url('../fonts/road/RoadRadio-Light.eot');
-  src: local('RoadRadio Light'), local('RoadRadio-Light'),
-  url('../fonts/road/RoadRadio-Light.eot?#iefix') format('embedded-opentype'),
-  url('../fonts/road/RoadRadio-Light.woff2') format('woff2'),
-  url('../fonts/road/RoadRadio-Light.woff') format('woff'),
-  url('../fonts/road/RoadRadio-Light.ttf') format('truetype');
+  font-family: 'SimplerPro';
+  src: url('../fonts/simpler/SimplerPro-Light.otf');
+  src: local('SimplerPro Light'), local('SimplerPro-Light'),
+  url('../fonts/simpler/SimplerPro-Light.otf?#iefix') format('embedded-opentype'),
+  url('../fonts/simpler/SimplerPro-Light.woff2') format('woff2'),
+  url('../fonts/simpler/SimplerPro-Light.woff') format('woff');
   font-weight: 300;
   font-style: normal;
 }
 
-@font-face {
-  font-family: 'RoadRadio';
-  src: url('../fonts/road/RoadRadio-Thin.eot');
-  src: local('RoadRadio Thin'), local('RoadRadio-Thin'),
-  url('../fonts/road/RoadRadio-Thin.eot?#iefix') format('embedded-opentype'),
-  url('../fonts/road/RoadRadio-Thin.woff2') format('woff2'),
-  url('../fonts/road/RoadRadio-Thin.woff') format('woff'),
-  url('../fonts/road/RoadRadio-Thin.ttf') format('truetype');
-  font-weight: 100;
-  font-style: normal;
-}
+
 
 @font-face {
-  font-family: 'RoadRadio';
-  src: url('../fonts/road/RoadRadio-Black.eot');
-  src: local('RoadRadio Black'), local('RoadRadio-Black'),
-  url('../fonts/road/RoadRadio-Black.eot?#iefix') format('embedded-opentype'),
-  url('../fonts/road/RoadRadio-Black.woff2') format('woff2'),
-  url('../fonts/road/RoadRadio-Black.woff') format('woff'),
-  url('../fonts/road/RoadRadio-Black.ttf') format('truetype');
+  font-family: 'SimplerPro';
+  src: url('../fonts/simpler/SimplerPro-Black.otf');
+  src: local('SimplerPro Black'), local('SimplerPro-Black'),
+  url('../fonts/simpler/SimplerPro-Black.otf?#iefix') format('embedded-opentype'),
+  url('../fonts/simpler/SimplerPro-Black.woff2') format('woff2'),
+  url('../fonts/simpler/SimplerPro-Black.woff') format('woff');
   font-weight: 900;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'RoadRadio';
-  src: url('../fonts/road/RoadRadio-Bold.eot');
-  src: local('RoadRadio Bold'), local('RoadRadio-Bold'),
-  url('../fonts/road/RoadRadio-Bold.eot?#iefix') format('embedded-opentype'),
-  url('../fonts/road/RoadRadio-Bold.woff2') format('woff2'),
-  url('../fonts/road/RoadRadio-Bold.woff') format('woff'),
-  url('../fonts/road/RoadRadio-Bold.ttf') format('truetype');
+  font-family: 'SimplerPro';
+  src: url('../fonts/simpler/SimplerPro-Bold.otf');
+  src: local('SimplerPro Bold'), local('SimplerPro-Bold'),
+  url('../fonts/simpler/SimplerPro-Bold.otf?#iefix') format('embedded-opentype'),
+  url('../fonts/simpler/SimplerPro-Bold.woff2') format('woff2'),
+  url('../fonts/simpler/SimplerPro-Bold.woff') format('woff');
   font-weight: bold;
   font-style: normal;
 }
