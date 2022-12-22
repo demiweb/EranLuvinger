@@ -82,6 +82,86 @@ function allLozadImg() {
 
 allLozadImg();
 
+//mouse follows
+let compass = document.querySelector(".compass-img .comp");
+function ifCompass() {
+    if (compass) {
+
+
+        $("body").mousemove(function(event) {
+            var eye = $(".compass-img .comp");
+            var eye2 = $(".compass-img .comp img");
+            // console.log('eye', eye);
+            // console.log(eye.offset().top);
+            // console.log(eye.offset().left);
+            var x = (eye.offset().left) + (eye.width() / 2);
+            var y = (eye.offset().top) + (eye.height() / 2);
+            var rad = Math.atan2(event.pageX - x, event.pageY - y);
+            var rot = (rad * (180 / Math.PI) * -1) + 180;
+            eye2.css({
+                '-webkit-transform': 'rotate(' + rot + 'deg)',
+                '-moz-transform': 'rotate(' + rot + 'deg)',
+                '-ms-transform': 'rotate(' + rot + 'deg)',
+                'transform': 'rotate(' + rot + 'deg)'
+            });
+
+        });
+
+
+
+    }
+}
+
+ifCompass();
+
+
+//lines strokes
+
+let arrowScroll = [...document.querySelectorAll('.arrow-scrolling')];
+var controller = new ScrollMagic.Controller();
+
+function arrowScrolling() {
+    if (arrowScroll.length) {
+        arrowScroll.forEach((sv) => {
+            let pathes = [...sv.querySelectorAll('path.ln')];
+            let trigg = sv.querySelector('.trigg');
+            let trigg2 = sv.querySelector('.trigg2');
+            let ar = sv.querySelector('path.arr');
+            pathes.forEach((btn) => {
+                let lng = btn.getTotalLength();
+                btn.style.strokeDashoffset = lng+'px';
+                btn.style.strokeDasharray = lng+'px';
+
+                var scene = new ScrollMagic.Scene({triggerElement: trigg, duration: '45%'})
+                    // animate color and top border in relation to scroll position
+                    .setTween(btn, {
+                        strokeDashoffset: "0",
+                        ease: Linear.easeNone,
+                    }) // the tween durtion can be omitted and defaults to 1
+                    .addIndicators({name: "img 1 (duration: 15%)"}) // add indicators (requires plugin)
+                    .addTo(controller);
+
+
+                var scene2 = new ScrollMagic.Scene({triggerElement: trigg2, duration: '75%'})
+                    // animate color and top border in relation to scroll position
+                    .setClassToggle(ar, 'show') // the tween durtion can be omitted and defaults to 1
+                    .addIndicators({name: "img 1 (duration: 15%)"}) // add indicators (requires plugin)
+                    .addTo(controller);
+            })
+        })
+    }
+}
+
+arrowScrolling();
+
+//lines strokes
+
+
+
+
+
+//mouse follows
+
 
 // var backdrop = document.querySelector('.backdrop');
 
