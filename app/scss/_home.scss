@@ -967,6 +967,18 @@ body:not(.home) {
   width: 30.4688vw;
   margin-top: 10.5208vw;
 
+  .expertise-text {
+    ul {
+      li {
+        margin-bottom: 1.0417vw;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
 }
 
 .brands-img {
@@ -1216,6 +1228,131 @@ body:not(.home) {
       line-height: 2.0833vw;
       color: #BDBDBD;
     }
+  }
+}
+
+.our-start-bg {
+  position: absolute;
+  z-index: 1;
+  left: -1.0417vw;
+  bottom: 0;
+  width: 77.1354vw;
+  height: 74.6875vw;
+
+  .img {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 100%;
+
+    }
+  }
+}
+
+.our-start {
+  width: 100%;
+  margin-top: 10.1563vw;
+  padding-bottom: 45.0000vw;
+  position: relative;
+
+  .container {
+    position: relative;
+    z-index: 2;
+  }
+}
+
+.start-scrolling {
+  right: 26.4063vw;
+  top: 1.7708vw;
+  transform: translate(0, -100%);
+  width: 18.4375vw;
+  height: 17.2396vw;
+  position: absolute;
+  z-index: 1;
+
+  mask-image: url("../img/pink3.svg");
+  mask-position: 0 0;
+  mask-size: 100% 100%;
+}
+
+.start-cont {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+
+.start-text {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 34.7917vw;
+  margin-right: 0.3125vw;
+
+  .expertise-text {
+    ul {
+      padding-left: 1.0417vw;
+    }
+  }
+}
+
+.implement {
+  width: 100%;
+  margin-top: -1.5104vw;
+  margin-bottom: 20.7813vw;
+}
+
+.implement-cont {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.implement-scrolling {
+  width: 26.7188vw;
+  height: 16.6667vw;
+  position: absolute;
+  bottom: calc(100% + 2.9167vw);
+  left: 14.3229vw;
+  z-index: 1;
+
+  mask-image: url("../img/pink4.svg");
+  mask-position: 0 0;
+  mask-size: 100% 100%;
+}
+
+.implement-img {
+  width: 100%;
+  margin-top: 2.9688vw;
+  height: 34.6354vw;
+
+  .img {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+    img, video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+.implement-text {
+  width: 100%;
+  max-width: 37.3438vw;
+  position: relative;
+  z-index: 2;
+
+  p {
+    max-width: 30.4688vw;
   }
 }
 
