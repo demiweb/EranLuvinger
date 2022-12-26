@@ -126,7 +126,7 @@ function arrowScrolling() {
             let pathes = [...sv.querySelectorAll('path.ln')];
             let trigg = sv.querySelector('.trigg');
             let trigg2 = sv.querySelector('.trigg2');
-            let ar = sv.querySelector('path.arr');
+            let ar = [...sv.querySelectorAll('path.arr')];
             pathes.forEach((btn) => {
                 let lng = btn.getTotalLength();
                 btn.style.strokeDashoffset = lng+'px';
@@ -138,14 +138,17 @@ function arrowScrolling() {
                         strokeDashoffset: "0",
                         ease: Linear.easeNone,
                     }) // the tween durtion can be omitted and defaults to 1
-                    .addIndicators({name: "img 1 (duration: 15%)"}) // add indicators (requires plugin)
+                    // .addIndicators({name: "img 1 (duration: 15%)"}) // add indicators (requires plugin)
                     .addTo(controller);
 
 
+
+            });
+            ar.forEach((ar2) => {
                 var scene2 = new ScrollMagic.Scene({triggerElement: trigg2, duration: '75%'})
                     // animate color and top border in relation to scroll position
-                    .setClassToggle(ar, 'show') // the tween durtion can be omitted and defaults to 1
-                    .addIndicators({name: "img 1 (duration: 15%)"}) // add indicators (requires plugin)
+                    .setClassToggle(ar2, 'show') // the tween durtion can be omitted and defaults to 1
+                    // .addIndicators({name: "img 1 (duration: 15%)"}) // add indicators (requires plugin)
                     .addTo(controller);
             })
         })
