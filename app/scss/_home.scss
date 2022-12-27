@@ -1705,16 +1705,24 @@ body:not(.home) {
 
 .case-images__first-img {
   position: absolute;
-  width: 553px;
+  width: 28.8021vw;
   bottom: 0;
-  left: 65px;
-  height: 783px;
+  left: 3.3854vw;
+  height: 40.7813vw;
+
   .case-comment {
     position: absolute;
-    left: 470px;
-    bottom: 60px;
+    left: 24.4792vw;
+    bottom: 3.1250vw;
+    width: 13.0208vw;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
   }
 }
+
 .case-images__first-video {
   width: 100%;
   height: 31.5625vw;
@@ -1724,15 +1732,16 @@ body:not(.home) {
     width: 100%;
     height: 100%;
   }
+
   .case-comment {
     position: absolute;
-    top:4.4271vw;
+    top: 4.4271vw;
     left: calc(100% + 1.6667vw);
   }
 }
 
 .case-comment {
-  padding: 0.3646vw 1.1979vw 0.5729vw;
+  padding: 0.3646vw 0.2vw 0.5729vw 1.1979vw;
 
   font-style: normal;
   font-weight: 200;
@@ -1741,6 +1750,204 @@ body:not(.home) {
   color: #0C1115;
   border-left: 4px solid #BDBDBD;
   min-width: 13.0208vw;
+}
+
+.case-images__second {
+  width: 100%;
+  padding-right: 6.0417vw;
+  padding-left: 1.4583vw;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-bottom: 4.6875vw;
+}
+
+.case-images__second-first {
+  position: relative;
+  width: 55.1563vw;
+  height: 36.2500vw;
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .case-comment {
+    position: absolute;
+    top: 2.7604vw;
+    width: 15.5729vw;
+    right: -2px;
+  }
+}
+
+.case-images__second-second {
+  width: 35.2604vw;
+  height: 29.2188vw;
+  margin-top: 2.8125vw;
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.case-cont__books {
+  width: 100%;
+  background: #FFFFFF;
+  border-radius: 0.6250vw;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.case-cont__books-first {
+  width: 100%;
+  padding: 7.1875vw 7.3438vw 9.3750vw 7.2917vw;
+  position: relative;
+
+  .img {
+    width: 100%;
+    height: 29.2188vw;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .case-comment {
+    width: 16.6667vw;
+    top: 2.5521vw;
+    left: 21.8750vw;
+    position: absolute;
+  }
+}
+
+.case-cont__books-cont {
+  width: 100%;
+  padding-bottom: 57.2396vw;
+  position: relative;
+}
+
+.case-cont__books-1 {
+  position: absolute;
+  width: 53.5417vw;
+  right: 39.4792vw;
+  bottom: -3.1771vw;
+  height: 62.9688vw;
+  img {
+    width: 100%;
+  }
+  .case-comment {
+    width: 17.8438vw;
+    top: 2.5521vw;
+    left: 29.0104vw;
+    position: absolute;
+  }
+}
+
+.case-cont__books-2 {
+  position: absolute;
+  width: 61.3021vw;
+  left: 31.5625vw;
+  bottom: -3.1771vw;
+  height: 62.9688vw;
+  img {
+    width: 100%;
+  }
+  .case-comment {
+    width: 15.1563vw;
+    top: 2.5521vw;
+    left: 12.1875vw;
+    position: absolute;
+  }
+}
+
+.case-changes {
+  width: 100%;
+  margin-top: 10.0000vw;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.logo-changes {
+  width: 100%;
+  max-width: 70.8333vw;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+.logo-changes__first {
+  width: 100%;
+  .img {
+    width: 100%;
+    height: 16.5104vw;
+    margin-bottom: 0.9896vw;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  p {
+    font-style: normal;
+    font-weight: 200;
+    font-size: 0.9375vw;
+    line-height: 1.2500vw;
+    color: #0C1115;
+  }
+}
+.logo-changes__second {
+  position: absolute;
+  bottom: 0;
+  left: 35.4167vw;
+  .img {
+    display: none;
+  }
+  p {
+    font-style: normal;
+    font-weight: 200;
+    font-size: 0.9375vw;
+    line-height: 1.2500vw;
+    color: #0C1115;
+  }
+}
+
+.logo-previews {
+  width: 100%;
+  padding-left: 2.8646vw;
+  padding-right: 3.1250vw;
+  position: relative;
+  margin-top: 12.9688vw;
+  height: 24.1667vw;
+  margin-bottom: 14.8958vw;
+}
+
+.logo-note {
+  width: 601px;
+  height: 350px;
+  position: absolute;
+  &:nth-child(1) {
+    left: 55px;
+    top: 0;
+  }
+  &:nth-child(3) {
+    right: 60px;
+    top: 0;
+  }
+  &:nth-child(2) {
+    width: 596px;
+    height: 348px;
+    bottom: 0;
+    left: 639px;
+    .case-comment {
+      bottom: calc(100% + 61px);
+      left: 66px;
+    }
+  }
 }
 
 @media screen and (max-width: 767px) {
