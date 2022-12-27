@@ -27,6 +27,9 @@ ifHiddenBg();
 $(window).scroll(function (e) {
     $el = $('.header');
     $el.toggleClass('header-fixed', $(this).scrollTop() > 52);
+
+    scrollParallaxBg();
+    scrollParallaxImg();
 });
 
 function headerStart() {
@@ -39,6 +42,67 @@ function headerStart() {
     }
 }
 headerStart();
+
+
+//scrolling bg
+
+let scrollingBg = [...document.querySelectorAll('.scrolled-bg')];
+
+function scrollParallaxBg() {
+    if (scrollingBg.length) {
+        scrollingBg.forEach((bg) => {
+            let toTop = bg.getBoundingClientRect().top;
+            let h = bg.offsetHeight;
+            let inc = bg.dataset.inc;
+            // console.log(h);
+            // console.log(toTop);
+            if (toTop < 0) {
+                if (inc > 0.6) {
+                    inc = 0.6;
+                }
+                bg.style.setProperty('--st', `${((toTop * (-1)) / h) * 100 * inc}%`);
+            } else {
+                bg.style.setProperty('--st', '0');
+            }
+        })
+    }
+}
+
+scrollParallaxBg();
+
+
+//scrolling bg
+
+//scrolling img
+
+let scrollingImg = [...document.querySelectorAll('.scrolled-img')];
+
+function scrollParallaxImg() {
+    if (scrollingImg.length) {
+        scrollingImg.forEach((bg) => {
+            let toTop = bg.getBoundingClientRect().top;
+            let w = window.innerHeight;
+            // console.log(w);
+            let h = bg.offsetHeight;
+            let inc = bg.dataset.inc;
+            // console.log(h);
+
+            if (toTop < w) {
+                if (inc > 0.6) {
+                    inc = 0.6;
+                }
+                bg.style.setProperty('--st', `${((toTop * (-1)) / w) * 100 * inc}%`);
+            } else {
+                bg.style.setProperty('--st', '0');
+            }
+        })
+    }
+}
+
+scrollParallaxImg();
+
+
+//scrolling img
 
 //header scroll
 
