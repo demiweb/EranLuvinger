@@ -1478,12 +1478,14 @@ body:not(.home) {
     color: #0C1115;
   }
 }
+
 .case-about__text {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
+
   > span {
     font-style: normal;
     font-weight: 200;
@@ -1492,13 +1494,16 @@ body:not(.home) {
     color: #0C1115;
     display: inline-block;
     margin-bottom: 1.3021vw;
+
     &:first-child {
       margin-top: 1.0417vw;
     }
+
     &:last-child {
       margin-bottom: 0;
     }
   }
+
   > p {
     font-style: normal;
     font-weight: 400;
@@ -1516,17 +1521,226 @@ body:not(.home) {
   align-items: flex-start;
   justify-content: flex-start;
   margin-bottom: 2.8125vw;
+
   &:last-child {
     margin-bottom: 0;
   }
+
+  > p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5625vw;
+    line-height: 2.3958vw;
+    color: #0C1115;
+    margin-bottom: 0.9375vw;
+
+    strong {
+      font-weight: 900;
+      font-size: 3.1250vw;
+      line-height: 2.5000vw;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+  }
+
+  > span:not(.income-title) {
+    small {
+      font-weight: 200;
+      font-size: 0.9375vw;
+      line-height: 1.2500vw;
+
+      strong {
+        font-weight: 700;
+        font-size: inherit;
+        line-height: inherit;
+      }
+    }
+  }
 }
+
 .income-title {
   font-style: normal;
   font-weight: 600;
-  font-size: 37px;
-  line-height: 48px;
+  font-size: 1.9271vw;
+  line-height: 2.5000vw;
   text-align: center;
   color: #FFFFFF;
+  padding: 0.2083vw 1.8750vw;
+  background: #0C1115;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.6146vw;
+}
+
+.income-values {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+
+  > .income-value {
+    &:nth-child(2) {
+      margin-left: auto;
+    }
+
+  }
+}
+
+.income-combo {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-right: auto;
+
+  .income-value {
+    &:last-child {
+      position: relative;
+      margin-left: 2.6563vw;
+
+      &::before {
+        width: 1.4583vw;
+        height: 1.6667vw;
+        right: 100%;
+        top: 0.2083vw;
+        display: inline-block;
+        content: '';
+        position: absolute;
+        background: url("../img/tria-b.svg") no-repeat center / 100%;
+      }
+    }
+  }
+
+}
+
+.income-value {
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding-left: 1.6146vw;
+  margin-left: 1.9271vw;
+
+  &:first-child:not(.growth) {
+    padding-left: 0;
+    margin-left: 0;
+  }
+
+  &:first-child.growth {
+    margin-left: 0;
+  }
+
+  p {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 3.1250vw;
+    line-height: 2.5000vw;
+    color: #0C1115;
+    display: inline-flex;
+    align-items: flex-end;
+
+    small {
+      font-size: 0.61em;
+      font-weight: inherit;
+      line-height: 0.9;
+    }
+  }
+
+  span {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5104vw;
+    line-height: 2.5000vw;
+    color: #0C1115;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &.growth {
+    position: relative;
+
+    &::before {
+      height: 1.4583vw;
+      width: 1.6667vw;
+      left: 0;
+      top: 0.2083vw;
+      display: inline-block;
+      content: '';
+      position: absolute;
+      background: url("../img/tria-g.svg") no-repeat center / 100%;
+    }
+
+  }
+
+  &.degrowth {
+    position: relative;
+
+    &::before {
+      height: 1.4583vw;
+      width: 1.6667vw;
+      left: 0;
+      top: 0.2083vw;
+      display: inline-block;
+      content: '';
+      position: absolute;
+      background: url("../img/tria-r.svg") no-repeat center / 100%;
+    }
+
+  }
+}
+
+.case-images__first {
+  width: 100%;
+  padding-left: 20.8333vw;
+  padding-right: 20.7813vw;
+  position: relative;
+  padding-bottom: 218px;
+}
+
+.case-images__first-img {
+  position: absolute;
+  width: 553px;
+  bottom: 0;
+  left: 65px;
+  height: 783px;
+  .case-comment {
+    position: absolute;
+    left: 470px;
+    bottom: 60px;
+  }
+}
+.case-images__first-video {
+  width: 100%;
+  height: 31.5625vw;
+  position: relative;
+
+  iframe {
+    width: 100%;
+    height: 100%;
+  }
+  .case-comment {
+    position: absolute;
+    top:4.4271vw;
+    left: calc(100% + 1.6667vw);
+  }
+}
+
+.case-comment {
+  padding: 0.3646vw 1.1979vw 0.5729vw;
+
+  font-style: normal;
+  font-weight: 200;
+  font-size: 0.9375vw;
+  line-height: 1.2500vw;
+  color: #0C1115;
+  border-left: 4px solid #BDBDBD;
+  min-width: 13.0208vw;
 }
 
 @media screen and (max-width: 767px) {
