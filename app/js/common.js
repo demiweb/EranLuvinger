@@ -1,24 +1,26 @@
 //mouse hidden bg
 let bgHidden = document.querySelector('.hidden-bg .img');
+
 function ifHiddenBg() {
     if (bgHidden) {
-        function update(e){
+        function update(e) {
             let rect = e.target.getBoundingClientRect();
-            var x = e.clientX - rect.left || e.touches[0].clientX  - rect.left;
-            var y = e.clientY  - rect.top || e.touches[0].clientY  - rect.top;
+            var x = e.clientX - rect.left || e.touches[0].clientX - rect.left;
+            var y = e.clientY - rect.top || e.touches[0].clientY - rect.top;
 
             bgHidden.style.setProperty('--cursorX', x + 'px');
             bgHidden.style.setProperty('--cursorY', y + 'px');
         }
 
-        bgHidden.addEventListener('mousemove',update)
-        bgHidden.addEventListener('touchmove',update);
+        bgHidden.addEventListener('mousemove', update)
+        bgHidden.addEventListener('touchmove', update);
         bgHidden.addEventListener('mouseout', () => {
             bgHidden.style.setProperty('--cursorX', '-50vw');
             bgHidden.style.setProperty('--cursorY', '-50vh');
         })
     }
 }
+
 ifHiddenBg();
 
 
@@ -41,6 +43,7 @@ function headerStart() {
         hm.style.height = `calc((100vh - ${hei}px) + 4.1767vw)`;
     }
 }
+
 headerStart();
 
 
@@ -126,7 +129,28 @@ function clickNext() {
 
 clickNext();
 
+
 //go next click
+
+
+//go recent
+
+let goRecent = [...document.querySelectorAll('.scroll-recent')];
+
+function followRecent() {
+    if (goRecent.length) {
+        goRecent.forEach((btn) => {
+            btn.addEventListener('click', () => {
+                $([document.documentElement, document.body]).animate({
+                    scrollTop: $('.recent-cases').offset().top
+                }, 400);
+            })
+        })
+    }
+}
+
+followRecent();
+//go recent
 
 
 var allLazyLoad = [...document.querySelectorAll('.lazyload')];
@@ -148,11 +172,12 @@ allLozadImg();
 
 //mouse follows
 let compass = document.querySelector(".compass-img .comp");
+
 function ifCompass() {
     if (compass) {
 
 
-        $("body").mousemove(function(event) {
+        $("body").mousemove(function (event) {
             var eye = $(".compass-img .comp");
             var eye2 = $(".compass-img .comp img");
             // console.log('eye', eye);
@@ -170,7 +195,6 @@ function ifCompass() {
             });
 
         });
-
 
 
     }
@@ -193,8 +217,8 @@ function arrowScrolling() {
             let ar = [...sv.querySelectorAll('path.arr')];
             pathes.forEach((btn) => {
                 let lng = btn.getTotalLength();
-                btn.style.strokeDashoffset = lng+'px';
-                btn.style.strokeDasharray = lng+'px';
+                btn.style.strokeDashoffset = lng + 'px';
+                btn.style.strokeDasharray = lng + 'px';
 
                 var scene = new ScrollMagic.Scene({triggerElement: trigg, duration: '45%'})
                     // animate color and top border in relation to scroll position
@@ -204,7 +228,6 @@ function arrowScrolling() {
                     }) // the tween durtion can be omitted and defaults to 1
                     // .addIndicators({name: "img 1 (duration: 15%)"}) // add indicators (requires plugin)
                     .addTo(controller);
-
 
 
             });
@@ -222,9 +245,6 @@ function arrowScrolling() {
 arrowScrolling();
 
 //lines strokes
-
-
-
 
 
 //mouse follows
@@ -315,8 +335,6 @@ function costumSlider() {
 costumSlider();
 
 
-
-
 let subSlider = [...document.querySelectorAll('.sub-menu-slider')];
 
 function subStartSlider() {
@@ -396,8 +414,6 @@ function lineStartSlider() {
 }
 
 lineStartSlider();
-
-
 
 
 //sliders
