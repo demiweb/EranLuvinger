@@ -262,6 +262,7 @@ function burgerControl() {
             btn.addEventListener('click', () => {
                 btn.classList.toggle('active');
                 centerMenu.classList.toggle('out');
+                document.querySelector('.header').classList.toggle('toggle');
                 // backdrop.classList.toggle('active');
                 document.body.classList.toggle('no-scroll')
 

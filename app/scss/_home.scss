@@ -443,6 +443,35 @@ body {
 }
 
 @media screen and (min-width: 767px) {
+  .case-project {
+    .to-contacts {
+      .container {
+        > p {
+          max-width: 80%;
+        }
+      }
+    }
+  }
+  .case-images__second {
+    margin-top: 0.6vw;
+  }
+  .income-block {
+    &:last-child {
+      margin-top: -0.7vw;
+      .income-title {
+        margin-bottom: 1.7vw;
+      }
+      > span:not(.income-title) {
+        margin-top: -0.4vw;
+        display: inline-block;
+      }
+    }
+  }
+  .case-about__head {
+    h2 {
+      margin-bottom: -0.3646vw;
+    }
+  }
   .to-contacts p {
     max-width: 95%;
   }
@@ -1558,7 +1587,7 @@ html {
 .case-about {
   width: 100%;
   margin-top: 4.8958vw;
-  margin-bottom: 8.9063vw;
+  margin-bottom: 9.7063vw;
 }
 
 .case-about__head {
@@ -1567,7 +1596,7 @@ html {
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  margin-bottom: 3.2813vw;
+  margin-bottom: 3.1813vw;
 
   h2 {
     font-style: normal;
@@ -1631,7 +1660,7 @@ html {
     line-height: 2.7083vw;
     color: #0C1115;
     display: inline-block;
-    margin-bottom: 1.3021vw;
+    margin-bottom: 0.795021vw;
 
     &:first-child {
       margin-top: 1.0417vw;
@@ -1648,7 +1677,9 @@ html {
     font-size: 1.5625vw;
     line-height: 2.7083vw;
     color: #0C1115;
-    margin-bottom: 1.3021vw;
+    //margin-bottom: 1.3021vw;
+    margin-bottom: 0.4021vw;
+    width: 98%;
   }
 }
 
@@ -1662,6 +1693,7 @@ html {
 
   &:last-child {
     margin-bottom: 0;
+
   }
 
   > p {
@@ -1670,7 +1702,7 @@ html {
     font-size: 1.5625vw;
     line-height: 2.3958vw;
     color: #0C1115;
-    margin-bottom: 0.9375vw;
+    margin-bottom: .7375vw;
 
     strong {
       font-weight: 900;
@@ -1706,7 +1738,7 @@ html {
   line-height: 2.5000vw;
   text-align: center;
   color: #FFFFFF;
-  padding: 0.2083vw 1.8750vw;
+  padding: .2083vw 2.375vw;
   background: #0C1115;
   display: flex;
   align-items: center;
@@ -1737,13 +1769,13 @@ html {
   .income-value {
     &:last-child {
       position: relative;
-      margin-left: 2.6563vw;
+      margin-left: 2.99563vw;
 
       &::before {
         width: 1.4583vw;
         height: 1.6667vw;
-        right: 100%;
-        top: 0.2083vw;
+        right: 98%;
+        top: 0.3083vw;
         display: inline-block;
         content: '';
         position: absolute;
@@ -1806,8 +1838,8 @@ html {
     &::before {
       height: 1.4583vw;
       width: 1.6667vw;
-      left: 0;
-      top: 0.2083vw;
+      left: -0.1vw;
+      top: 0.4083vw;
       display: inline-block;
       content: '';
       position: absolute;
@@ -1851,7 +1883,7 @@ html {
   .case-comment {
     position: absolute;
     left: 24.4792vw;
-    bottom: 3.1250vw;
+    bottom: 3vw;
     width: 13.0208vw;
   }
 
@@ -1873,13 +1905,13 @@ html {
 
   .case-comment {
     position: absolute;
-    top: 4.4271vw;
+    top: 4.3271vw;
     left: calc(100% + 1.6667vw);
   }
 }
 
 .case-comment {
-  padding: 0.3646vw 0.2vw 0.5729vw 1.1979vw;
+  padding: .3646vw .2vw .5729vw 0.99vw;
 
   font-style: normal;
   font-weight: 200;
@@ -1898,6 +1930,7 @@ html {
   align-items: flex-start;
   justify-content: flex-start;
   margin-bottom: 4.6875vw;
+
 }
 
 .case-images__second-first {
@@ -1912,7 +1945,7 @@ html {
 
   .case-comment {
     position: absolute;
-    top: 2.7604vw;
+    top: 2.3604vw;
     width: 15.5729vw;
     right: -2px;
   }
@@ -1958,7 +1991,7 @@ html {
 
   .case-comment {
     width: 16.6667vw;
-    top: 2.5521vw;
+    top: 2.2521vw;
     left: 21.8750vw;
     position: absolute;
   }
@@ -1983,7 +2016,7 @@ html {
 
   .case-comment {
     width: 17.8438vw;
-    top: 2.5521vw;
+    top: 2.1521vw;
     left: 29.0104vw;
     position: absolute;
   }
@@ -2002,7 +2035,7 @@ html {
 
   .case-comment {
     width: 15.1563vw;
-    top: 2.5521vw;
+    top: 2.1521vw;
     left: 12.1875vw;
     position: absolute;
   }
@@ -2103,7 +2136,7 @@ html {
     left: 33.2813vw;
 
     .case-comment {
-      bottom: calc(100% + 3.1771vw);
+      bottom: calc(100% + 2.9771vw);
       left: 3.4375vw;
       position: absolute;
       width: 17.3438vw;
@@ -2115,7 +2148,7 @@ html {
   width: 100%;
   padding-top: 51.7708vw;
   position: relative;
-  margin-bottom: 3.3854vw;
+  margin-bottom: 3.4854vw;
 }
 
 .case-production__first {
@@ -2136,7 +2169,7 @@ html {
   }
 
   .case-comment {
-    bottom: calc(100% + 0.8854vw);
+    bottom: calc(100% + .5854vw);
     left: 9.2188vw;
     width: 14.3750vw;
     position: absolute;
@@ -2161,7 +2194,7 @@ html {
   }
 
   .case-comment {
-    bottom: calc(100% + 0.8854vw);
+    bottom: calc(100% + .5854vw);
     left: 0;
     width: 11.7188vw;
     position: absolute;
@@ -2179,7 +2212,7 @@ html {
   .case-comment {
     width: 15.9729vw;
     margin-left: 22.7604vw;
-    margin-bottom: 0.9375vw;
+    margin-bottom: .8375vw;
   }
 }
 
@@ -2229,10 +2262,11 @@ html {
 
 .case-project {
   .to-contacts {
-    margin-bottom: 3.4896vw;
+    margin-bottom: 4.5896vw;
 
     .container {
       > p {
+
         color: #0C1115;
       }
     }
@@ -2568,7 +2602,7 @@ html {
       font-size: 1.5625vw;
       line-height: 2.0833vw;
       color: #FFFFFF;
-      margin-bottom: 2.6042vw;
+      margin-bottom: 2.9042vw;
     }
   }
 }
@@ -2579,7 +2613,7 @@ html {
   .btn {
     height: 3.5417vw;
     width: 13.2292vw;
-    margin-top: 0.5208vw;
+    //margin-top: 0.5208vw;
   }
 
   .input-wrap {
@@ -2588,12 +2622,13 @@ html {
 }
 
 .contact-us__socials {
-  width: 19.0625vw;
+  width: 19.2625vw;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   margin-top: auto;
   margin-left: auto;
+  margin-bottom: -0.8vw;
 
   p {
     font-style: normal;
@@ -2601,7 +2636,7 @@ html {
     font-size: 1.5625vw;
     line-height: 2.0833vw;
     color: #E72A84;
-    margin-bottom: 0.6250vw;
+    margin-bottom: .825vw;
   }
 
   a {
@@ -2681,6 +2716,9 @@ html {
   }
 }
 @media screen and (max-width: 767px) {
+  .menu ul {
+    gap: 2.17vw;
+  }
   body:not(.home) {
     .hero-title {
       margin-bottom: 4.8vw;
@@ -2695,10 +2733,10 @@ html {
     max-width: 90%;
   }
   .contact-us__form .input-wrap {
-    margin-bottom: 5.5556vw;
+    margin-bottom: 3.5556vw;
   }
   .contact-us__form .btn {
-    margin-top: 3.8889vw;
+    margin-top: 4.8889vw;
     width: 34.7222vw;
     height: 9.7222vw;
     padding: 3px;
@@ -2714,7 +2752,7 @@ html {
     p {
       font-size: 5.0000vw;
       line-height: 10.2778vw;
-      margin-bottom: 1.9444vw;
+      margin-bottom: -0.56vw;
     }
 
     a {
@@ -2745,11 +2783,15 @@ html {
       width: 100%;
       margin-bottom: 16.1111vw;
 
-
+      .input-wrap {
+        input, textarea {
+          height: 9.8333vw;
+        }
+      }
       > p {
         font-size: 5.5556vw;
         line-height: 7.5000vw;
-        margin-bottom: 6.3889vw;
+        margin-bottom: 3.3889vw;
       }
 
       .hero-title {
@@ -2769,9 +2811,9 @@ html {
   .contact-us__bg {
     right: auto;
     left: 13.3333vw;
-    top: -13.3333vw;
+    top: -1.3333vw;
     width: 156.9444vw;
-    height: 110.2778vw;
+    height: 86.2778vw;
   }
   .page-404__block {
     padding-top: 25vw;
@@ -2805,8 +2847,9 @@ html {
       font-size: 7.7778vw;
       line-height: 7.2222vw;
       width: 57.2222vw;
-      top: 10.8333vw;
+      top: 10.7333vw;
       text-align: center;
+      letter-spacing: 0.02em;
     }
   }
   .cases-pagin a {
@@ -2822,7 +2865,7 @@ html {
   }
 
   .case-project .to-contacts {
-    margin-bottom: 10.0000vw;
+    margin-bottom: 12.0000vw;
   }
   .case-customers__list {
     display: flex;
@@ -2862,7 +2905,8 @@ html {
   .case-customers .case-comment {
     margin-left: 12.5000vw;
     width: 65.0000vw;
-    margin-bottom: 6.9444vw;
+    margin-bottom: 3.9444vw;
+    padding-left: 5.2vw;
   }
 
 
@@ -2870,7 +2914,7 @@ html {
     margin-bottom: 17.5000vw;
   }
   .case-production {
-    margin-bottom: 65.2778vw;
+    margin-bottom: 63.778vw;
     position: static;
     display: flex;
     flex-direction: column;
@@ -2891,10 +2935,11 @@ html {
 
     .case-comment {
       width: 62.5000vw;
-      top: calc(100% + 8.3333vw);
+      top: calc(100% + 7.0333vw);
       left: 17.2222vw;
       bottom: auto;
       right: auto;
+      padding-left: 5.2vw;
     }
   }
   .case-production__first {
@@ -2909,11 +2954,12 @@ html {
     margin-bottom: 19.7222vw;
 
     .case-comment {
-      bottom: -5.0000vw;
-      width: 74.1667vw;
+      bottom: -6.8vw;
+      width: 73.1667vw;
       left: 18.3333vw;
       right: auto;
       top: auto;
+      padding-left: 5.2vw;
     }
   }
 
@@ -2944,8 +2990,9 @@ html {
         bottom: auto;
         right: auto;
         width: 68.3333vw;
-        top: calc(100% + 90.8333vw);
-        left: 20.8333vw;
+        top: calc(100% + 89.5333vw);
+        left: 22.09333vw;
+        padding-left: 5.2vw;
       }
     }
 
@@ -3011,11 +3058,11 @@ html {
 
 
   .case-changes {
-    margin-top: 24.1667vw;
+    margin-top: 24.667vw;
   }
   .case-cont__books-cont {
     position: relative;
-    padding-top: 30.2778vw;
+    padding-top: 27.2778vw;
     padding-bottom: 6.3889vw;
     display: flex;
     align-items: flex-start;
@@ -3024,7 +3071,7 @@ html {
 
   }
   .case-cont__books-2 {
-    margin-top: 3.6111vw;
+    margin-top: 3.2111vw;
     position: relative;
     height: auto;
     top: auto;
@@ -3036,17 +3083,18 @@ html {
     justify-content: flex-start;
 
     .case-comment {
-      top: -3.6111vw;
+      top: -5.6111vw;
       left: 11.9444vw;
       right: auto;
       bottom: auto;
       width: 66.1111vw;
+      padding-left: 4.9vw;
     }
 
     img {
       width: 195.5556vw;
       height: 149.7222vw;
-      margin-left: -24.1667vw;
+      margin-left: -24.27vw;
     }
   }
   .case-cont__books-1 {
@@ -3061,28 +3109,32 @@ html {
     justify-content: flex-end;
 
     .case-comment {
-      bottom: 100%;
-      width: 66.3889vw;
-      right: 3.3333vw;
+      bottom: 98%;
+      width: 67.3889vw;
+      right: 1.3333vw;
       top: auto;
       left: auto;
+      padding: 1.9444vw 0 3.0556vw 5.3889vw;
     }
 
     img {
       width: 166.6667vw;
       height: 140.5556vw;
+      margin-right: -8.4vw;
     }
   }
   .case-cont__books {
     border-radius: 3.3333vw;
   }
   .case-cont__books-first {
-    padding: 47.5000vw 3.3333vw 10.2778vw 3.3333vw;
+    padding: 47.5vw 3.3333vw 3.2778vw 3.3333vw;
 
     .case-comment {
       width: 61.1111vw;
-      top: 12.2222vw;
+      top: 11.7222vw;
       left: 11.9444vw;
+      padding-left: 5vw;
+      padding-right: 1.7vw;
     }
 
     .img {
@@ -3096,11 +3148,12 @@ html {
     margin-left: -34.7222vw;
 
     .case-comment {
-      top: calc(100% + 5.5556vw);
+      top: calc(100% + 3.2556vw);
       width: 69.4444vw;
       right: auto;
       bottom: auto;
       left: 52.7778vw;
+      padding-left: 5vw;
     }
   }
   .case-images__second-second {
@@ -3113,7 +3166,7 @@ html {
     flex-direction: column-reverse;
     align-items: flex-start;
     justify-content: flex-start;
-    margin-bottom: 49.7222vw;
+    margin-bottom: 49.2222vw;
     padding-right: 0;
     padding-left: 0;
   }
@@ -3129,9 +3182,10 @@ html {
     .case-comment {
       width: 69.4444vw;
       left: 34.4444vw;
-      top: calc(100% - 3px);
+      top: calc(100% - 3.0556vw);
       right: auto;
       bottom: auto;
+      padding-left: 5.4vw;
     }
   }
 
@@ -3141,10 +3195,11 @@ html {
 
     .case-comment {
       width: 69.1667vw;
-      bottom: 0;
+      bottom: 0.7vw;
       right: auto;
       top: auto;
       left: 17.2222vw;
+      padding-left: 5vw;
     }
   }
   .case-images__first {
@@ -3178,7 +3233,7 @@ html {
     }
   }
   .income-block > span:not(.income-title) {
-    margin-top: 5.8333vw;
+    margin-top: 3.8333vw;
   }
   .income-block > span:not(.income-title) small {
     font-size: 5.0000vw;
@@ -3187,7 +3242,7 @@ html {
 
 
   .income-title {
-    padding: 0.5556vw 7.2222vw;
+    padding: .5556vw 9.2222vw;
     margin-bottom: 9.1667vw;
     font-size: 7.2222vw;
     line-height: 9.4444vw;
@@ -3201,7 +3256,7 @@ html {
     margin-left: 0;
   }
   .income-combo .income-value:last-child {
-    margin-left: 5.5556vw;
+    margin-left: 8.2556vw;
     padding-left: 12.2222vw;
 
     &::before {
@@ -3238,7 +3293,18 @@ html {
     }
   }
   .income-block {
-    margin-bottom: 11.3889vw;
+    margin-bottom: 14.3889vw;
+    &:last-child {
+      margin-top: -3.5vw;
+      .income-title {
+        margin-bottom: 14vw;
+      }
+      .income-value {
+        &:first-child {
+          margin-bottom: 3vw;
+        }
+      }
+    }
   }
   .income-values > .income-value:nth-child(2) {
     margin-left: 0;
@@ -3249,17 +3315,18 @@ html {
     > span {
       font-size: 5.0000vw;
       line-height: 7.7778vw;
-      margin-bottom: 5.8333vw;
+      margin-bottom: 3.8333vw;
 
       &:first-child {
-        margin-top: 1.1111vw;
+        margin-top: 0.5111vw;
       }
     }
 
     > p {
       font-size: 5.0000vw;
       line-height: 7.7778vw;
-      margin-bottom: 5.8333vw;
+      margin-bottom: 3.5333vw;
+      width: 101%;
 
       &:last-child {
         margin-bottom: 0;
@@ -3291,7 +3358,7 @@ html {
     }
   }
   .case-about__cont {
-    gap: 21.1111vw;
+    gap: 19.0111vw;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
@@ -3948,7 +4015,7 @@ html {
       line-height: 10.2778vw;
       color: #E72A84;
       display: inline-block;
-      margin-bottom: 3.3333vw;
+      margin-bottom: 1.3333vw;
     }
 
     ul {
@@ -3996,7 +4063,7 @@ html {
     width: 100%;
     align-items: flex-start;
     justify-content: flex-start;
-    margin-top: 29.1667vw;
+    margin-top: 26.1667vw;
     padding-left: 24.7222vw;
   }
   .header-menu {
@@ -4018,6 +4085,7 @@ html {
 
     &.out {
       transform: translate(0, 0);
+      pointer-events: auto;
     }
   }
 
@@ -4308,6 +4376,12 @@ html {
   .header {
     &.header-fixed {
       margin-top: -4.1667vw;
+    }
+    &.toggle {
+      margin-top: 0 !important;
+      .header-cont {
+        background: $dark;
+      }
     }
   }
   .hero-title {
